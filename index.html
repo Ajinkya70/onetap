@@ -3,68 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PaperX – Interactive Newspaper</title>
+    <title>OneTap - Digital Visiting Cards</title>
     <link rel="stylesheet" href="style.css">
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <h1>📰 PaperX</h1>
-        <p class="date">Tuesday, August 5, 2025</p>
-        <p class="tagline">The Future of Print Starts Here</p>
+
+    <!-- Header / Hero Section -->
+    <header>
+        <div class="container hero-container">
+            <div class="hero-text">
+                <h1>OneTap</h1>
+                <p>Share your digital visiting card instantly via NFC & QR code.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+919819413273" class="btn">Call Us</a>
+                    <a href="mailto:lemobotofficial@gmail.com?subject=Create%20My%20OneTap%20Card" class="btn btn-secondary">Email Us</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <img src="Images/demo.jpg" alt="OneTap Card Demo" class="hero-image">
+            </div>
+        </div>
     </header>
 
-    <main class="paper-container">
-
-        <section class="headline full-width">
-            <h2>World's First Scannable Newspaper is Live!</h2>
-            <p class="lead">Scan and experience print media like never before — dive into videos, 3D models, and more with your mobile device.</p>
-        </section>
-
-        <section class="column article">
-            <h3>📈 Economy Rebounds in Q3</h3>
-            <p><span class="dropcap">T</span>he national economy posted surprising growth in the third quarter, fueled by innovation and post-pandemic recovery spending. Experts believe the trend will continue...</p>
-        </section>
-
-        <section class="column article">
-            <h3>🧠 Tech: AR is Taking Over Advertising</h3>
-            <p><span class="dropcap">A</span>ugmented Reality has leaped from gaming into marketing. Brands are now embedding interactive 3D experiences into everything from newspapers to coffee cups...</p>
-        </section>
-
-        <section class="column ad">
-            <img src="Images/blue-car-driving-road.jpg" alt="Ad 1">
-            <div class="ad-info">
-                <h3>🚗 BMW X7 Launch</h3>
-                <p>Scan to see the car in 3D AR!</p>
-                <img src="QR/x7.png" alt="QR Code 1" class="qr">
-                <a href="CarAR.html" target="_blank">
-                    <button class="ar-button">🕶 View Car in AR</button>
-                </a>
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container">
+            <h2>Why OneTap?</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Digital Visiting Cards</h3>
+                    <p>Professional cards you can share instantly with anyone.</p>
+                </div>
+                <div class="card">
+                    <h3>NFC Enabled</h3>
+                    <p>Tap your NFC card and your digital profile opens immediately.</p>
+                </div>
+                <div class="card">
+                    <h3>QR Codes</h3>
+                    <p>Scan a QR code to access your OneTap card from any device.</p>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="column article">
-            <h3>🌍 Environment: Cities Go Greener</h3>
-            <p><span class="dropcap">M</span>ajor urban centers are pushing for electric transport and clean energy, with over 70% of metros now adopting sustainability mandates...</p>
-        </section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions or want to create your card? Reach out:</p>
+            <p>📞 <a href="tel:+919819413273">+91 9819-413-273</a></p>
+            <p>✉️ <a href="mailto:lemobotofficial@gmail.com?subject=Create%20My%20OneTap%20Card">lemobotofficial@gmail.com</a></p>
+        </div>
+    </section>
 
-        <section class="column ad">
-            <img src="Images/high-angle-school-supplies-table-assortment.jpg" alt="Ad 2">
-            <div class="ad-info">
-                <h3>📱 Smartwatch Z Series</h3>
-                <p>Scan to explore features in AR.</p>
-                <img src="QR/z.png" alt="QR Code 2" class="qr">
-                <a href="ChaiAR.html" target="_blank">
-                    <button class="ar-button">🫖 View Chai in AR</button>
-                </a>
-
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="footer">
-        <p>&copy; 2025 PaperX Inc. – Brought to life with AR.</p>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 OneTap by Lemobot. All Rights Reserved.</p>
+        </div>
     </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+    </script>
 </body>
 </html>

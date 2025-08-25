@@ -1,0 +1,110 @@
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    color: #111;
+    line-height: 1.6;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-bottom: 2px solid #222;
+}
+
+    .header h1 {
+        font-size: 3em;
+        margin: 0;
+        font-family: 'Times New Roman', Times, serif;
+        letter-spacing: 1px;
+    }
+
+.date {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.tagline {
+    font-style: italic;
+    color: #333;
+}
+
+.paper-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 1100px;
+    margin: 20px auto;
+    gap: 20px;
+    padding: 0 15px;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-left: 5px solid #222;
+}
+
+.lead {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.column {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.article h3 {
+    border-bottom: 1px solid #999;
+    padding-bottom: 5px;
+}
+
+.dropcap {
+    float: left;
+    font-size: 3em;
+    line-height: 1;
+    padding-right: 8px;
+    color: #000;
+    font-weight: bold;
+}
+
+.ad img {
+    max-height: 150px;
+    object-fit: cover;
+    border: 1px solid #999;
+}
+
+.ad-info {
+    margin-top: 10px;
+}
+
+.qr {
+    margin-top: 10px;
+    border: 1px solid #000;
+}
+
+.ar-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 10px;
+    background: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-family: monospace;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+    background: #eee;
+    color: #444;
+    margin-top: 20px;
+}
